@@ -11,6 +11,8 @@ print(response)
 if response.status_code == 200:
     dados_json = response.json()
     #print(dados_json)
+
+    #criando um dicionario
     dados_restaurante = {}
     for item in dados_json:
         nome_do_restaurante = item['Company']
